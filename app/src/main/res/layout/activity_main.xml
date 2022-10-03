@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/relativeLayout"
+        app:layout_anchorGravity="center">
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/textLabelValueOne" />
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="number"
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@id/et1"
+            android:minHeight="48dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/textLabelValueTwo" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="number"
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@id/et2"
+            android:minHeight="48dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="26dp"
+            android:onClick="sumar"
+            android:text="@string/textButton" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/textLabelValueThree" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
